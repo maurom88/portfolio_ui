@@ -1,0 +1,101 @@
+<!--
+    TODO
+
+    1. insert logo
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Link to CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Link to JS-->
+
+    <!--Fonts from Google-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    <!-- Change title on every page-->
+    <title>Mauro Meden|Contact</title>
+</head>
+
+<body>
+
+    <!-- Header to be copied in all pages-->
+    <header>
+        <h1>Mauro Meden - Web Developer</h1>
+        <!-- Navigation bar-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact me</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get in touch</h2>
+
+        <p>Send me a message using the form below, and I'll get back to you as soon as possible.</p>
+
+        <form action="" target="_self" method="POST">
+            <div class="form-container">
+                <div class="row">
+                    <div class="col-narrow">
+                        <label for="name">Name: </label>
+                    </div>
+                    <div class="col-wide">
+                        <input id="name" type="text" name="name" placeholder="John Smith" required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-narrow">
+                        <label for="phone">Phone # (only numbers): </label>
+                    </div>
+                    <div class="col-wide">
+                        <input id="phone" type="tel" name="phone" placeholder="xxxxxxxxxx"
+                            onkeydown="form_validation();" maxlength="10"><br>
+                        <div id="phone_err"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-narrow">
+                        <label for="email">Email address: </label>
+                    </div>
+                    <div class="col-wide">
+                        <input id="email" type="email" name="email" placeholder="name@example.com" required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-narrow">
+                        <label for="subject">Subject: </label>
+                    </div>
+                    <div class="col-wide">
+                        <input id="subject" type="text" name="subject" required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-narrow">
+                        <label for="message">Your message: </label>
+                    </div>
+                    <div class="col-wide">
+                        <textarea id="message" rows="10" cols="30" name="message" required></textarea><br>
+                    </div>
+                </div>
+                <div class="form-button-group">
+                    <input class="form-button" type="submit" value="Send message">
+                    <input class="form-button" type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer to be copied in all pages-->
+    <footer>
+        <!-- Social media contacts-->
+    </footer>
+
+</body>
+
+</html>
