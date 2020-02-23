@@ -16,7 +16,8 @@ function ContactForm() {
             body: JSON.stringify({name, email, phone, subject, message})
         })
         .then(response => response.json())
-        // .then()
+        .then(response => console.log(response))
+        .catch(error => console.log(error))
     }
 
     function handleNameInput(event) {
