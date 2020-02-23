@@ -3,18 +3,18 @@ import React from 'react'
 function Resume() {
     return (
         <main>
-            <div class="row my-3">
-                <div class="col-sm-12 text-center">
+            <div className="row my-3">
+                <div className="col-sm-12 text-center">
                     <h2>Work Experience</h2>
                 </div>
             </div>
 
-            <div class="container">
+            <div className="container">
                 <section>
-                    <div class="row my-3">
-                        <div class="col-sm-12">
-                            <article class="row justify-content-center my-3 border-bottom">
-                                <div class="col-sm-6">
+                    <div className="row my-3">
+                        <div className="col-sm-12">
+                            <article className="row justify-content-center my-3 border-bottom">
+                                <div className="col-sm-6">
                                     <h3>Mechanic and Personal Assistant</h3>
                                     <h4>Duties and Responsibilities:</h4>
                                     <ul>
@@ -25,8 +25,8 @@ function Resume() {
                                 </div>
                             </article>
 
-                            <article class="row justify-content-center my-3 border-bottom">
-                                <div class="col-sm-6">
+                            <article className="row justify-content-center my-3 border-bottom">
+                                <div className="col-sm-6">
                                     <h3>Language Teacher</h3>
                                     <h4>Duties and Responsibilities:</h4>
                                     <ul>
@@ -38,8 +38,8 @@ function Resume() {
                                 </div>
                             </article>
 
-                            <article class="row justify-content-center my-3 border-bottom">
-                                <div class="col-sm-6">
+                            <article className="row justify-content-center my-3 border-bottom">
+                                <div className="col-sm-6">
                                     <h3>HR and Employees' Training Specialist</h3>
                                     <h4>Duties and Responsibilities:</h4>
                                     <ul>
@@ -50,8 +50,8 @@ function Resume() {
                                 </div>
                             </article>
 
-                            <article class="row justify-content-center my-3 border-bottom">
-                                <div class="col-sm-6">
+                            <article className="row justify-content-center my-3 border-bottom">
+                                <div className="col-sm-6">
                                     <h3>IT teacher</h3>
                                     <h4>Duties and Responsibilities:</h4>
                                     <ul>

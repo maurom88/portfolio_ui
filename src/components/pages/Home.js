@@ -2,9 +2,9 @@ import React from 'react'
 
 function Home() {
     return (
-        <main class="container">
-            <div class="row my-3">
-                <div class="col-sm-12 text-center">
+        <main className="container">
+            <div className="row my-3">
+                <div className="col-sm-12 text-center">
 
                     <div id="root"></div>
                     <div id="contact-me"></div>
@@ -14,27 +14,27 @@ function Home() {
             </div>
 
             <section>
-                <div class="row my-3">
-                    <div class="col-sm-3">
+                <div className="row my-3">
+                    <div className="col-sm-3">
                         <p>
                             A column on the left of the page with a list
-                        <ul class="list-group border-0">
-                                <li class="list-group-item border-0">
+                        <ul className="list-group border-0">
+                                <li className="list-group-item border-0">
                                     <a href="#">First Element</a>
                                 </li>
-                                <li class="list-group-item border-0">
+                                <li className="list-group-item border-0">
                                     <a href="#">Second element</a>
                                 </li>
-                                <li class="list-group-item border-0">
+                                <li className="list-group-item border-0">
                                     <a href="#">Third element</a>
                                 </li>
-                                <li class="list-group-item border-0">
+                                <li className="list-group-item border-0">
                                     <a href="#">Fourth element</a>
                                 </li>
                             </ul>
                         </p>
                     </div>
-                    <div class="col-sm-7">
+                    <div className="col-sm-7">
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quisquam blanditiis
                             similique?
