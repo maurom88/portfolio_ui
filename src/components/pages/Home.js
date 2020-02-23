@@ -20,16 +20,16 @@ function Home() {
                             A column on the left of the page with a list
                         <ul className="list-group border-0">
                                 <li className="list-group-item border-0">
-                                    <a href="#">First Element</a>
+                                    <a href="/">First Element</a>
                                 </li>
                                 <li className="list-group-item border-0">
-                                    <a href="#">Second element</a>
+                                    <a href="/">Second element</a>
                                 </li>
                                 <li className="list-group-item border-0">
-                                    <a href="#">Third element</a>
+                                    <a href="/">Third element</a>
                                 </li>
                                 <li className="list-group-item border-0">
-                                    <a href="#">Fourth element</a>
+                                    <a href="/">Fourth element</a>
                                 </li>
                             </ul>
                         </p>
