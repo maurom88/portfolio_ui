@@ -8,8 +8,6 @@ import Resume from './components/pages/Resume'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-import './App.css'
-
 function App() {
   return (
     <BrowserRouter>
