@@ -9,6 +9,7 @@ function ContactForm() {
 
     function handleSubmit(event) {
         event.preventDefault();
+        console.log(name, email)
         let url = "https://localhost:9000/contact_us/post"
 
         fetch(url, {
