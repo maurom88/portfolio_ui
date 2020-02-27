@@ -1,4 +1,5 @@
 import React from 'react'
+import ListLink from '../items/ListLink'
 
 function Home() {
     return (
@@ -18,19 +19,11 @@ function Home() {
                     <div className="col-sm-3">
                         <p>
                             A column on the left of the page with a list
-                        <ul className="list-group border-0">
-                                <li className="list-group-item border-0">
-                                    <a href="/">First Element</a>
-                                </li>
-                                <li className="list-group-item border-0">
-                                    <a href="/">Second element</a>
-                                </li>
-                                <li className="list-group-item border-0">
-                                    <a href="/">Third element</a>
-                                </li>
-                                <li className="list-group-item border-0">
-                                    <a href="/">Fourth element</a>
-                                </li>
+                            <ul className="list-group border-0">
+                                <ListLink classNameLi="list-group-item border-0" name="First Element" url="/" />
+                                <ListLink classNameLi="list-group-item border-0" name="Second Element" url="/portfolio" />
+                                <ListLink classNameLi="list-group-item border-0" name="Third Element" url="/resume" />
+                                <ListLink classNameLi="list-group-item border-0" name="Fourth Element" url="/contact" />
                             </ul>
                         </p>
                     </div>

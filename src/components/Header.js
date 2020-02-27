@@ -1,4 +1,5 @@
 import React from 'react'
+import ListLink from './items/ListLink'
 
 function Header() {
     return (
@@ -13,18 +14,10 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/portfolio">Portfolio</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/resume">Resume</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/contact">Contact me</a>
-                        </li>
+                            <ListLink classNameLi="nav-item" classNameA="nav-link" name="Home" url="/" />
+                            <ListLink classNameLi="nav-item" classNameA="nav-link" name="Portfolio" url="/portfolio"/>
+                            <ListLink classNameLi="nav-item" classNameA="nav-link" name="Resume" url="/resume"/>
+                            <ListLink classNameLi="nav-item" classNameA="nav-link" name="Contact me" url="/contact"/>
                     </ul>
                 </div>
             </nav>
