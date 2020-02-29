@@ -8,12 +8,17 @@ function ContactForm() {
     const [message, setMessage] = useState()
 
     function handleSubmit(event) {
-        event.preventDefault();
+        event.preventDefault()
         console.log(name, email)
-        let url = "https://localhost:9000/contact_us/post"
+        alert("thank you for your submission")
+        let url = "http://localhost:9000/contact_us/post"
 
         fetch(url, {
             method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify({name, email, phone, subject, message})
         })
         .then(response => response.json())
