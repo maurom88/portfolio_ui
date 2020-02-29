@@ -11,7 +11,7 @@ function ContactForm() {
         event.preventDefault()
         console.log(name, email)
         alert("thank you for your submission")
-        let url = "http://localhost:9000/contact_us/post"
+        let url = "http://localhost:9000/contact/post"
 
         fetch(url, {
             method: 'POST',

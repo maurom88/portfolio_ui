@@ -1,16 +1,15 @@
 import React from 'react'
 import data from '../json/data'
+import ListLink from '../components/items/ListLink'
 
 const socialMediaList = data.SocialMedias
 
 function Footer() {
     return (
         <footer>
-            <ul className="navbar-nav">
+            <ul className="nav navbar-nav">
                 {socialMediaList.map(s => (
-                    <li className="nav-item">
-                        <a href={s} className="nav-link">{s}</a>
-                    </li>
+                    <ListLink key={s.id} classNameLi="nav-item" classNameA="nav-link" name={s.name} url={s.url} />
                 ))}
             </ul>
         </footer>
