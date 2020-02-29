@@ -14,7 +14,7 @@ function Contact() {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-sm-7">
-                    <p>Send me a message using the form below, and I'll get back to you as soon as possible.</p>
+                    <p>Please send me a message using the form below.</p>
 
                     <ContactForm />
                 </div>

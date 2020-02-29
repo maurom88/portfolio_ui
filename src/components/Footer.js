@@ -7,11 +7,18 @@ const socialMediaList = data.SocialMedias
 function Footer() {
     return (
         <footer>
-            <ul className="nav navbar-nav">
-                {socialMediaList.map(s => (
-                    <ListLink key={s.id} classNameLi="nav-item" classNameA="nav-link" name={s.name} url={s.url} />
-                ))}
-            </ul>
+            <nav
+                className="nav navbar-expand-sm bg-color-5 navbar-light"
+                style={{
+                    flexDirection: "row",
+                    justifyContent: "center"
+                }}>
+                <ul className="navbar-nav">
+                    {socialMediaList.map(s => (
+                        <ListLink key={s.id} classNameLi="nav-item" classNameA="nav-link" name={s.name} url={s.url} />
+                    ))}
+                </ul>
+            </nav>
         </footer>
     )
 }
