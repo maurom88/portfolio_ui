@@ -1,5 +1,4 @@
 import React from 'react'
-import data from '../../json/data'
 
 function Resume() {
     return (
@@ -14,6 +13,9 @@ function Resume() {
                 <section>
                     <div className="row my-3">
                         <div className="col-sm-12">
+
+                            {/* Each experience in a different <article> */}
+
                             <article className="row justify-content-center my-3 border-bottom">
                                 <div className="col-sm-6">
                                     <h3>Personal Assistant and Interpreter</h3>
@@ -83,6 +85,7 @@ function Resume() {
                                     </ul>
                                 </div>
                             </article>
+
                         </div>
                     </div>
                 </section>

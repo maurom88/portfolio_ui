@@ -7,12 +7,17 @@ function ContactForm() {
     const [subject, setSubject] = useState()
     const [message, setMessage] = useState()
 
+    // Function to execute when the form is submitted
     function handleSubmit(event) {
+        // Prevent default behaviour (page reload)
         event.preventDefault()
-        let contactForm = document.getElementById("contactForm")
-        console.log(name, email)
+
+        // For debugging purposes
+        //console.log(name, email)
+
         let url = "http://localhost:9000/contact/post"
 
+        // Use fetch to post the content of the form to the url above
         fetch(url, {
             method: 'POST',
             headers: {
@@ -23,7 +28,10 @@ function ContactForm() {
         })
             .then(response => response.json())
             .then(response => console.log(response))
+
+            // After sending the data, hide the form and display a message using the hideForm function (below)
             .then(hideForm())
+
             .catch(error => console.log(error))
     }
 
@@ -55,12 +63,16 @@ function ContactForm() {
 
     return (
         <div>
+
+            {/* This <div> is only diplayed after the form submission */}
             <div id="submitMessage" style={{ display: "none" }}>
                 <p>
                     Thank you for your message.<br />
                     I'll get back to you as soon as possible.
                 </p>
             </div>
+
+            {/* The form will be hidden after submission */}
             <form id="contactForm" onSubmit={handleSubmit} style={{ display: "" }}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
@@ -83,7 +95,6 @@ function ContactForm() {
                     <textarea onChange={handleMessageInput} className="form-control" name="message" id="" cols="30" rows="10" required></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary mb-2">Submit</button>
-
             </form>
         </div>
     )
