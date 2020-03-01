@@ -7,3 +7,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 TODO:
 1. Resume.js: create component for job experience and move content to json file
 2. Resume.js: create another column for other experinces/skills
+3. Footer.js: always display at the bottom of the page (when hiding the form after submission, it gets pushed up)

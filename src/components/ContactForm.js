@@ -65,7 +65,7 @@ function ContactForm() {
         <div>
 
             {/* This <div> is only diplayed after the form submission */}
-            <div id="submitMessage" style={{ display: "none" }}>
+            <div className="text-center bg-info py-3" id="submitMessage" style={{ display: "none" }}>
                 <p>
                     Thank you for your message.<br />
                     I'll get back to you as soon as possible.
