@@ -19,13 +19,13 @@ function Home() {
                     <div className="col-sm-3">
                         <p>
                             A column on the left of the page with a list
-                            <ul className="list-group border-0">
-                                <ListLink classNameLi="list-group-item border-0" name="First Element" url="/" />
-                                <ListLink classNameLi="list-group-item border-0" name="Second Element" url="/portfolio" />
-                                <ListLink classNameLi="list-group-item border-0" name="Third Element" url="/resume" />
-                                <ListLink classNameLi="list-group-item border-0" name="Fourth Element" url="/contact" />
-                            </ul>
                         </p>
+                        <ul className="list-group border-0">
+                            <ListLink classNameLi="list-group-item border-0" name="First Element" url="/" />
+                            <ListLink classNameLi="list-group-item border-0" name="Second Element" url="/portfolio" />
+                            <ListLink classNameLi="list-group-item border-0" name="Third Element" url="/resume" />
+                            <ListLink classNameLi="list-group-item border-0" name="Fourth Element" url="/contact" />
+                        </ul>
                     </div>
                     <div className="col-sm-7">
                         <p>
@@ -36,7 +36,7 @@ function Home() {
                             minima
                             accusamus
                             inventore perspiciatis doloribus.
-                    </p>
+                        </p>
                     </div>
                 </div>
             </section>
