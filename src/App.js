@@ -22,8 +22,8 @@ function App() {
           <Route path="/contact/list" component={ContactList} exact />
           <Route path="/portfolio" component={Portfolio} exact />
           <Route path="/resume" component={Resume} exact />
-          <Route path="/users" component={Users} exact />
-          <Route path="/users/list" component={UsersList} exact />
+          <Route path="/users/signup" component={Users} exact />
+          <Route path="/users" component={UsersList} exact />
         </Switch>
         <Footer />
       </div>

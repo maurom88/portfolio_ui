@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function UsersList() {
     const [users, setUsers] = useState([])
 
-    const url = "http://localhost:9000/users/list"
+    const url = "http://localhost:9000/users"
 
     fetch(url, {
         method: 'GET'

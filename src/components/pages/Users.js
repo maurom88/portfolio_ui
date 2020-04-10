@@ -14,9 +14,7 @@ function Users() {
         // Prevent default behaviour (page reload)
         event.preventDefault()
 
-        // For debugging purposes
-
-        let url = "http://localhost:9000/users"
+        let url = "http://localhost:9000/users/signup"
 
         // Use fetch to post the content of the form to the url above
         fetch(url, {
