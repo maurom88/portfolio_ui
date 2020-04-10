@@ -5,7 +5,8 @@ function Users() {
     const [firstName, setFirstName] = useState()
     const [lastName, setLastName] = useState()
     const [email, setEmail] = useState()
-    const [password, setPassword] = useState()
+    const [password1, setPassword1] = useState()
+    // const [password2, setPassword2] = useState()
     const history = useHistory() // allows use of history.push() for redirect after registration
 
     // Function to execute when the form is submitted
@@ -24,11 +25,11 @@ function Users() {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ firstName, lastName, email, password })
+            body: JSON.stringify({ firstName, lastName, email, password1 })
         })
             .then(response => response.json())
             .then(response => response)
-            .then(history.push('/users/list')) // redirect to home page after registration
+            .then(history.push('/users/list')) // redirect to users list after registration
 
             .catch(error => console.log(error))
     }
@@ -45,9 +46,13 @@ function Users() {
         setEmail(event.target.value)
     }
 
-    function handlePasswordInput(event) {
-        setPassword(event.target.value)
+    function handlePassword1Input(event) {
+        setPassword1(event.target.value)
     }
+
+    // function handlePassword2Input(event) {
+    //     setPassword2(event.target.value)
+    // }
 
     return (
         <form id="registrationForm" onSubmit={handleSubmit}>
@@ -66,12 +71,12 @@ function Users() {
 
             <div className="form-group">
                 <label htmlFor="password-1">Password</label>
-                <input onChange={handlePasswordInput} type="password" className="form-control" name="password-1" placeholder="********" required />
+                <input onChange={handlePassword1Input} type="password" className="form-control" name="password-1" placeholder="********" required />
             </div>
-            <div className="form-group">
+            {/* <div className="form-group">
                 <label htmlFor="password-2">Repeat password</label>
-                <input onChange={handlePasswordInput} type="password" className="form-control" name="password-2" placeholder="********" required />
-            </div>
+                <input onChange={handlePassword2Input} type="password" className="form-control" name="password-2" placeholder="********" required />
+            </div> */}
             <button type="submit" className="btn btn-primary mb-2">Submit</button>
         </form>
     )
