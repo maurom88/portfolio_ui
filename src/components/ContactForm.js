@@ -15,7 +15,7 @@ function ContactForm() {
         // For debugging purposes
         //console.log(name, email)
 
-        let url = "http://localhost:9000/contact/post"
+        let url = "http://localhost:9000/contact"
 
         // Use fetch to post the content of the form to the url above
         fetch(url, {
