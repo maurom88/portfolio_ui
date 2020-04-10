@@ -29,7 +29,7 @@ function Users() {
         })
             .then(response => response.json())
             .then(response => response)
-            .then(history.push('/users/list')) // redirect to users list after registration
+            //.then(history.push('/users/list')) // redirect to users list after registration
 
             .catch(error => console.log(error))
     }
