@@ -13,9 +13,9 @@ function Portfolio() {
             <section>
                 <div className="container portfolio">
                     <div className="row my-3">
-                        <PortfolioImage title="A Long Road" imgSrc="https://picsum.photos/id/563/300/300" altText="Project 1: A Long Road" />
-                        <PortfolioImage title="Reaching the Sky" imgSrc="https://picsum.photos/id/328/300/300" altText="Project 1: A Long Road" />
-                        <PortfolioImage title="Coffee Break" imgSrc="https://picsum.photos/id/431/300/300" altText="Project 1: A Long Road" />
+                        <PortfolioImage title="A Long Road" imgSrc="https://picsum.photos/id/563/300/300" altText="Project: A Long Road" />
+                        <PortfolioImage title="Reaching the Sky" imgSrc="https://picsum.photos/id/328/300/300" altText="Project: Reaching the Sky" />
+                        <PortfolioImage title="Coffee Break" imgSrc="https://picsum.photos/id/431/300/300" altText="Project: Coffee Break" />
                     </div>
                 </div>
             </section>
