@@ -11,10 +11,10 @@ function Job(props) {
                     {props.start} - {props.end === null ? "Present" : props.end}<br />
                     {props.city}, {props.country}
                 </p>
-                <h4>Duties and Responsibilities:</h4>
+                {/* <h4>Duties and Responsibilities:</h4>
                 <ul>
                     <li></li>
-                </ul>
+                </ul> */}
             </div>
         </article>
     )
