@@ -1,6 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import Job from '../items/Job'
 
 function Resume() {
+    const [jobs, setJobs] = useState([])
+
+    const url = "http://localhost:9000/resume"
+
+    fetch(url, {
+        method: 'GET'
+    })
+        .then(function (response) {
+            if (response.status >= 400) {
+                throw new Error("Bad response from server")
+            }
+            return response.json()
+        })
+        .then(function (data) {
+            setJobs(data)
+        })
+        .catch(err => {
+            console.log('caught it!', err)
+        })
+
     return (
         <main>
             <div className="row my-3">
@@ -9,14 +31,27 @@ function Resume() {
                 </div>
             </div>
 
+            {/* <div className="container">
+                <section>
+                    <div className="row my-3">
+                        <div className="col-sm=12">
+
+                        </div>
+                    </div>
+                </section>
+            </div> */}
+
             <div className="container">
                 <section>
                     <div className="row my-3">
                         <div className="col-sm-12">
 
+                        {jobs.map(job =>
+                            <Job key={job.JobID} start={job.StartDate} end={job.EndDate} title={job.Title} employer={job.Employer} city={job.City} country={job.Country} />)}
+
                             {/* Each experience in a different <article> */}
 
-                            <article className="row justify-content-center my-3 border-bottom">
+                            {/* <article className="row justify-content-center my-3 border-bottom">
                                 <div className="col-sm-6">
                                     <h3>Personal Assistant and Interpreter</h3>
                                     <p>Big Eye Machine, Inc.</p>
@@ -84,7 +119,7 @@ function Resume() {
                                         <li>Developed and administered exams and assessments</li>
                                     </ul>
                                 </div>
-                            </article>
+                            </article> */}
 
                         </div>
                     </div>
