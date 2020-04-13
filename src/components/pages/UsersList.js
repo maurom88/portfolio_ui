@@ -1,25 +1,15 @@
 import React, { useState } from 'react'
+import fetchFunc from '../items/fetchFunc'
 
 function UsersList() {
     const [users, setUsers] = useState([])
 
-    const url = "http://localhost:9000/users/list"
+    const url = "http://localhost:9000/users"
 
-    fetch(url, {
-        method: 'GET'
-    })
-        .then(function (response) {
-            if (response.status >= 400) {
-                throw new Error("Bad response from server")
-            }
-            return response.json()
-        })
-        .then(function (data) {
-            setUsers(data)
-        })
-        .catch(err => {
-            console.log('caught it!', err)
-        })
+    fetch(url)
+        .then(response => fetchFunc.handleResponse(response))
+        .then(data => setUsers(data))
+        .catch(err => fetchFunc.handleError)
 
     return (
         <div>
