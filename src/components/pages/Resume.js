@@ -1,27 +1,16 @@
 import React, { useState } from 'react'
-
 import Job from '../items/Job'
+import fetchFunc from '../items/fetchFunc'
 
 function Resume() {
     const [jobs, setJobs] = useState([])
 
     const url = "http://localhost:9000/resume"
 
-    fetch(url, {
-        method: 'GET'
-    })
-        .then(function (response) {
-            if (response.status >= 400) {
-                throw new Error("Bad response from server")
-            }
-            return response.json()
-        })
-        .then(function (data) {
-            setJobs(data)
-        })
-        .catch(err => {
-            console.log('caught it!', err)
-        })
+    fetch(url)
+        .then(response => fetchFunc.handleResponse(response))
+        .then(data => setJobs(data))
+        .catch(err => fetchFunc.handleError(err))
 
     return (
         <main>

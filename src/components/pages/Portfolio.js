@@ -1,26 +1,16 @@
 import React, { useState } from 'react'
 import PortfolioImage from '../items/PortfolioImage'
+import fetchFunc from '../items/fetchFunc'
 
 function Portfolio() {
     const [projects, setProjects] = useState([])
 
     const url = "http://localhost:9000/portfolio"
 
-    fetch(url, {
-        method: 'GET'
-    })
-        .then(function (response) {
-            if (response.status >= 400) {
-                throw new Error("Bad response from server")
-            }
-            return response.json()
-        })
-        .then(function (data) {
-            setProjects(data)
-        })
-        .catch(err => {
-            console.log('caught it!', err)
-        })
+    fetch(url)
+        .then(response => fetchFunc.handleResponse(response))
+        .then(data => setProjects(data))
+        .catch(err => fetchFunc.handleError(err))
 
     return (
         <main>
