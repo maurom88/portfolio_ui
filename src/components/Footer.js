@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer>
             <nav
-                className="nav navbar-expand-sm bg-color-5 navbar-light"
+                className="nav navbar-expand-sm bg-color-5 bg-dark"
                 style={{
                     flexDirection: "row",
                     justifyContent: "center"

@@ -3,43 +3,47 @@ import ListLink from '../items/ListLink'
 
 function Home() {
     return (
-        <main className="container">
-            <div className="row my-3">
-                <div className="col-sm-12 text-center">
-
-                    <div id="root"></div>
-                    <div id="contact-me"></div>
-
-                    <h2>Welcome to my website</h2>
-                </div>
-            </div>
-
-            <section>
-                <div className="row my-3">
-                    <div className="col-sm-3">
-                        <p>
-                            A column on the left of the page with a list
-                        </p>
-                        <ul className="list-group border-0">
-                            <ListLink classNameLi="list-group-item border-0" name="First Element" url="/" />
-                            <ListLink classNameLi="list-group-item border-0" name="Second Element" url="/portfolio" />
-                            <ListLink classNameLi="list-group-item border-0" name="Third Element" url="/resume" />
-                            <ListLink classNameLi="list-group-item border-0" name="Fourth Element" url="/contact" />
-                        </ul>
-                    </div>
-                    <div className="col-sm-7">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quisquam blanditiis
-                            similique?
-                            Voluptatum
-                            repudiandae commodi sapiente fugiat exercitationem, itaque illum unde ex quis labore totam
-                            minima
-                            accusamus
-                            inventore perspiciatis doloribus.
-                        </p>
-                    </div>
+        <main className="container home">
+            
+            <section class="jumbotron text-center bg-dark">
+                <div class="container">
+                    <h1>Welcome to my Site!</h1>
+                    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                 </div>
             </section>
+
+        <div class="py-5 bg-dark">
+            <div class="container">
+               <h3>Services</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"><rect width="100%" height="100%" fill="#55595c"/></svg>
+                            <div class="card-body">
+                                <p class="card-text">Description of a service you offer?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"><rect width="100%" height="100%" fill="#55595c"/></svg>
+                            <div class="card-body">
+                                <p class="card-text">Description of a service you offer?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"><rect width="100%" height="100%" fill="#55595c"/></svg>
+                            <div class="card-body">
+                                <p class="card-text">Description of a service you offer?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </main>
     )
 }
