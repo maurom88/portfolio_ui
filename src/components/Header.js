@@ -25,7 +25,7 @@ function Header() {
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
                         <h1>Mauro Meden</h1>
-                        <p>Full Start Web Developer</p>
+                        <p>Full Stack Web Developer</p>
                     </div>
                 </div>
             </div>
