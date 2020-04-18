@@ -24,13 +24,11 @@ nav a:hover {
 .header-image {
     height: 100vh;
     max-height: 250px;
-    background-image: url(../components/images/header_image.jpg);
+    background-image: url(./images/header_image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     text-shadow: 2px 2px #000000;
-    
   }
 
 .home {

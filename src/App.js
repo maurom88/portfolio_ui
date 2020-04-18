@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import './stylesheet.css'
 
 import Contact from './components/pages/Contact'
 import ContactList from './components/pages/ContactList'

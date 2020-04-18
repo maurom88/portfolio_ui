@@ -1,6 +1,5 @@
 import React from 'react'
 import ListLink from './items/ListLink'
-import './stylesheet.css';
 
 function Header() {
     return (
