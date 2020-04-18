@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../json/data'
 import ListLink from '../components/items/ListLink'
+import './stylesheet.css';
 
 const socialMediaList = data.SocialMedias
 
