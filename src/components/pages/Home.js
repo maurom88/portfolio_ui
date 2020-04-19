@@ -30,13 +30,16 @@ function Home() {
             </section> */}
 
             <section>
-                <div className="container">
-                    <h3 className="py-3">Services</h3>
-                    <div className="row">
-                        <Service title="Web Development" />
-                        <Service title="Search Engine Optimization" />
-                        <Service title="Language Services" />
+                <div className="row my-3">
+                    <div className="col-sm-12 text-center">
+                        <h2>Services</h2>
                     </div>
+                </div>
+
+                <div className="row">
+                    <Service title="Web Development" />
+                    <Service title="Search Engine Optimization" />
+                    <Service title="Language Services" />
                 </div>
             </section>
         </main>

@@ -13,15 +13,15 @@ function Portfolio() {
         .catch(err => fetchFunc.handleError(err))
 
     return (
-        <main>
-            <div className="row my-3">
-                <div className="col-sm-12 text-center">
-                    <h2>Portfolio</h2>
-                </div>
-            </div>
-
+        <main className="container">
             <section>
-                <div className="container portfolio">
+                <div className="row my-3">
+                    <div className="col-sm-12 text-center">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+
+                <div className="portfolio">
                     <div className="row my-3">
                         {projects.map(project =>
                             <PortfolioImage key={project.ProjectID} title={project.Title} imgSrc={project.Image} altText={project.Descr} />)}
