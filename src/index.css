@@ -1,0 +1,59 @@
+ /* COLOURS */
+
+ body {
+     background-color: #666;
+ }
+
+ .nav {
+     background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ /* header */
+
+ .nav {
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .nav-link {
+     position: relative;
+ }
+
+ /* underline animation for nav-link elements */
+
+ .nav-link:before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #fff;
+     visibility: hidden;
+     transform: scaleX(0);
+     transition: all 0.3s ease-in-out 0s;
+ }
+
+ .nav-link:hover:before {
+     visibility: visible;
+     transform: scaleX(1);
+ }
+
+ /* title transition to screen on home page */
+
+ @keyframes enterTitle {
+     from {
+         background-color: #666;
+         visibility: hidden;
+     }
+     to {
+         background-color: #fff;
+         visibility: visible;
+     }
+ }
+
+ section:first-of-type:first-child h2 {
+     visibility: visible;
+     /* animation-name: enterTitle; */
+     /* animation-duration: 10s; */
+ }

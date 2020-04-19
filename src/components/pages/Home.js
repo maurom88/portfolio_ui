@@ -1,33 +1,21 @@
 import React from 'react'
-import ListLink from '../items/ListLink'
+import Service from '../Service'
 
 function Home() {
     return (
         <main className="container">
-            <div className="row my-3">
-                <div className="col-sm-12 text-center">
-
-                    <div id="root"></div>
-                    <div id="contact-me"></div>
-
-                    <h2>Welcome to my website</h2>
-                </div>
-            </div>
-
-            <section>
+            <section className="my-3">
                 <div className="row my-3">
-                    <div className="col-sm-3">
-                        <p>
-                            A column on the left of the page with a list
-                        </p>
-                        <ul className="list-group border-0">
-                            <ListLink classNameLi="list-group-item border-0" name="First Element" url="/" />
-                            <ListLink classNameLi="list-group-item border-0" name="Second Element" url="/portfolio" />
-                            <ListLink classNameLi="list-group-item border-0" name="Third Element" url="/resume" />
-                            <ListLink classNameLi="list-group-item border-0" name="Fourth Element" url="/contact" />
-                        </ul>
+                    <div className="col-sm-12 text-center">
+
+                        <div id="root"></div>
+                        <div id="contact-me"></div>
+
+                        <h2>Welcome to my website</h2>
                     </div>
-                    <div className="col-sm-7">
+                </div>
+                {/* <div className="row my-3">
+                    <div className="col-sm-12">
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quisquam blanditiis
                             similique?
@@ -37,6 +25,17 @@ function Home() {
                             accusamus
                             inventore perspiciatis doloribus.
                         </p>
+                    </div>
+                </div> */}
+            </section>
+
+            <section>
+                <div className="container">
+                    <h3 className="py-3">Services</h3>
+                    <div className="row">
+                        <Service title="Web Development" />
+                        <Service title="Search Engine Optimization" />
+                        <Service title="Language Services" />
                     </div>
                 </div>
             </section>
