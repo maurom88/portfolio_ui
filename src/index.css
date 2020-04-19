@@ -85,3 +85,13 @@
      /* animation-name: enterTitle; */
      /* animation-duration: 10s; */
  }
+
+
+
+ .creditsList {
+    list-style-type: none;
+ }
+
+ main, section {
+     min-height: 400px;
+ }

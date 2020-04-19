@@ -4,7 +4,7 @@ import ContactForm from '../ContactForm'
 
 function Contact() {
     return (
-        <main>
+        <section>
             <div className="row my-3">
                 <div className="col-sm-12 text-center">
                     <h2>Get in Touch</h2>
@@ -21,7 +21,7 @@ function Contact() {
                 </div>
             </div>
 
-        </main>
+        </section>
     )
 }
 

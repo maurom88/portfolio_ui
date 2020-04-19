@@ -13,7 +13,7 @@ function Resume() {
         .catch(err => fetchFunc.handleError(err))
 
     return (
-        <main>
+        <section>
             <div className="row my-3">
                 <div className="col-sm-12 text-center">
                     <h2>Work Experience</h2>
@@ -30,17 +30,13 @@ function Resume() {
                 </section>
             </div> */}
 
-            <div className="container">
-                <section>
-                    <div className="row my-3">
-                        <div className="col-sm-12">
-                            {jobs.map(job =>
-                                <Job key={job.JobID} start={job.StartDate} end={job.EndDate} title={job.Title} employer={job.Employer} city={job.City} country={job.Country} />)}
-                        </div>
-                    </div>
-                </section>
+            <div className="row my-3">
+                <div className="col-sm-12">
+                    {jobs.map(job =>
+                        <Job key={job.JobID} start={job.StartDate} end={job.EndDate} title={job.Title} employer={job.Employer} city={job.City} country={job.Country} />)}
+                </div>
             </div>
-        </main>
+        </section>
     )
 }
 
