@@ -18,6 +18,10 @@
  .nav-link {
      position: relative;
  }
+ 
+ h1 {
+     margin-bottom: 200px;
+ }
 
  /* underline animation for nav-link elements */
 

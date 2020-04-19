@@ -4,7 +4,7 @@ import Service from '../Service'
 function Home() {
     return (
         <main className="container">
-            <section className="my-3">
+            {/* <section className="my-3">
                 <div className="row my-3">
                     <div className="col-sm-12 text-center">
 
@@ -14,7 +14,7 @@ function Home() {
                         <h2>Welcome to my website</h2>
                     </div>
                 </div>
-                {/* <div className="row my-3">
+                <div className="row my-3">
                     <div className="col-sm-12">
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quisquam blanditiis
@@ -26,8 +26,8 @@ function Home() {
                             inventore perspiciatis doloribus.
                         </p>
                     </div>
-                </div> */}
-            </section>
+                </div>
+            </section> */}
 
             <section>
                 <div className="container">

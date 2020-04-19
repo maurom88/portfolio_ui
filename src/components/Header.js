@@ -22,11 +22,10 @@ function Header() {
                 </div>
             </nav>
 
-            <div id="title" className="jumbotron jumbotron-fluid text-center pt-3 pb-5 bg-color-2" style={{marginBottom:0}}>
-                <h1 className="display-1">Mauro Meden</h1>
-                <p>
-                    Full Stack Web Developer
-                </p>
+            <div id="title" className="jumbotron jumbotron-fluid text-left pt-3 pb-5 pl-5 bg-color-2" style={{marginBottom:0}}>
+                <h1 className="display-5">Mauro Meden</h1>
+                <p className="my-0 display-3">Full Stack</p>
+                <p className="my-0 display-3">Web Developer</p>
             </div>
         </header>
     )
