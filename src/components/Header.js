@@ -4,7 +4,7 @@ import ListLink from './items/ListLink'
 function Header() {
     return (
         <header>
-            <nav className="nav navbar-expand-sm bg-color-5 navbar-light sticky-top">
+            <nav className="nav navbar-expand-sm navbar-light sticky-top">
                 <a href="/" className="navbar-brand">
                     <img className="rounded-circle img-fluid img-profile" src="" alt="" />
                 </a>
@@ -22,10 +22,10 @@ function Header() {
                 </div>
             </nav>
 
-            <div id="title" className="jumbotron jumbotron-fluid text-left pt-3 pb-5 pl-5 bg-color-2" style={{marginBottom:0}}>
-                <h1 className="display-5">Mauro Meden</h1>
-                <p className="my-0 display-3">Full Stack</p>
-                <p className="my-0 display-3">Web Developer</p>
+            <div id="title" className="jumbotron jumbotron-fluid pt-3 pb-5 px-5" style={{marginBottom:0}}>
+                <h1 className="text-right display-5">Mauro Meden</h1>
+                <p id="fullstack" className="text-left my-0 display-3">Full Stack</p>
+                <p id="webdev" className="text-left my-0 display-3">Web Developer</p>
             </div>
         </header>
     )
