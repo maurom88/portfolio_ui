@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Job from '../items/Job'
 import fetchFunc from '../items/fetchFunc'
 
@@ -7,10 +7,13 @@ function Resume() {
 
     const url = "http://localhost:9000/resume"
 
-    fetch(url)
+    useEffect(() => {
+        fetch(url)
         .then(response => fetchFunc.handleResponse(response))
         .then(data => setJobs(data))
         .catch(err => fetchFunc.handleError(err))
+    }, [])
+
 
     return (
         <main>

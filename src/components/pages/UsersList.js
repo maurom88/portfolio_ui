@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import fetchFunc from '../items/fetchFunc'
 
 function UsersList() {
@@ -6,10 +6,13 @@ function UsersList() {
 
     const url = "http://localhost:9000/users"
 
-    fetch(url)
-        .then(response => fetchFunc.handleResponse(response))
-        .then(data => setUsers(data))
-        .catch(err => fetchFunc.handleError)
+    useEffect(() => {
+        fetch(url)
+            .then(response => fetchFunc.handleResponse(response))
+            .then(data => setUsers(data))
+            .catch(err => fetchFunc.handleError)
+    }, [])
+
 
     return (
         <div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PortfolioImage from '../items/PortfolioImage'
 import fetchFunc from '../items/fetchFunc'
 
@@ -7,10 +7,12 @@ function Portfolio() {
 
     const url = "http://localhost:9000/portfolio"
 
-    fetch(url)
+    useEffect(() => {
+        fetch(url)
         .then(response => fetchFunc.handleResponse(response))
         .then(data => setProjects(data))
         .catch(err => fetchFunc.handleError(err))
+    }, [])
 
     return (
         <main className="container">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function ContactList() {
 
@@ -6,21 +6,24 @@ function ContactList() {
 
     const url = "http://localhost:9000/contact/list"
 
-    fetch(url, {
-        method: 'GET'
-    })
-        .then(function (response) {
-            if (response.status >= 400) {
-                throw new Error("Bad response from server")
-            }
-            return response.json()
+    useEffect(() => {
+        fetch(url, {
+            method: 'GET'
         })
-        .then(function (data) {
-            setSubs(data)
-        })
-        .catch(err => {
-            console.log('caught it!', err)
-        })
+            .then(function (response) {
+                if (response.status >= 400) {
+                    throw new Error("Bad response from server")
+                }
+                return response.json()
+            })
+            .then(function (data) {
+                setSubs(data)
+            })
+            .catch(err => {
+                console.log('caught it!', err)
+            })
+    }, [])
+
 
     return (
         <div>
