@@ -5,7 +5,7 @@ import fetchFunc from '../items/fetchFunc'
 function Resume() {
     const [jobs, setJobs] = useState([])
 
-    const url = "http://localhost:9000/resume"
+    const url = process.env.REACT_APP_API + "/resume"
 
     useEffect(() => {
         fetch(url)

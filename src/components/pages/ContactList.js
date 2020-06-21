@@ -4,7 +4,7 @@ function ContactList() {
 
     const [subs, setSubs] = useState([])
 
-    const url = "http://localhost:9000/contact/list"
+    const url = process.env.REACT_APP_API + "/contact/list"
 
     useEffect(() => {
         fetch(url, {

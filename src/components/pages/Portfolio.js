@@ -5,7 +5,7 @@ import fetchFunc from '../items/fetchFunc'
 function Portfolio() {
     const [projects, setProjects] = useState([])
 
-    const url = "http://localhost:9000/portfolio"
+    const url = process.env.REACT_APP_API + "/portfolio"
 
     useEffect(() => {
         fetch(url)

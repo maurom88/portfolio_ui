@@ -14,7 +14,7 @@ function Users() {
         // Prevent default behaviour (page reload)
         event.preventDefault()
 
-        let url = "http://localhost:9000/users/signup"
+        const url = process.env.REACT_APP_API + "/users/signup"
 
         // Use fetch to post the content of the form to the url above
         fetch(url, {

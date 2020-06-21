@@ -4,7 +4,7 @@ import fetchFunc from '../items/fetchFunc'
 function UsersList() {
     const [users, setUsers] = useState([])
 
-    const url = "http://localhost:9000/users"
+    const url = process.env.REACT_APP_API + "/users"
 
     useEffect(() => {
         fetch(url)
