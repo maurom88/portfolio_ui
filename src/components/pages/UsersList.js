@@ -4,10 +4,8 @@ import fetchFunc from '../items/fetchFunc'
 function UsersList() {
     const [users, setUsers] = useState([])
 
-    const url = process.env.REACT_APP_API + "/users"
-
     useEffect(() => {
-        fetch(url)
+        fetch(process.env.REACT_APP_API + "/users")
             .then(response => fetchFunc.handleResponse(response))
             .then(data => setUsers(data))
             .catch(err => fetchFunc.handleError)

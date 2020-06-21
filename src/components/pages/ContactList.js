@@ -4,10 +4,8 @@ function ContactList() {
 
     const [subs, setSubs] = useState([])
 
-    const url = process.env.REACT_APP_API + "/contact/list"
-
     useEffect(() => {
-        fetch(url, {
+        fetch(process.env.REACT_APP_API + "/contact/list", {
             method: 'GET'
         })
             .then(function (response) {

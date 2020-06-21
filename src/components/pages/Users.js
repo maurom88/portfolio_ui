@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 
 function Users() {
     const [firstName, setFirstName] = useState()
@@ -7,7 +7,7 @@ function Users() {
     const [email, setEmail] = useState()
     const [password1, setPassword1] = useState()
     // const [password2, setPassword2] = useState()
-    const history = useHistory() // allows use of history.push() for redirect after registration
+    // const history = useHistory() // allows use of history.push() for redirect after registration
 
     // Function to execute when the form is submitted
     function handleSubmit(event) {
