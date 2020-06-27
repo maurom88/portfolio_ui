@@ -1,7 +1,12 @@
-# Mauro Meden - Portfolio Website
+# PORTFOLIO FRONTEND - York Full Stack Web Development Program: Final Project
 
-User Interface for the personal project at [York University's Full Stack Web Development Certificate Program](http://continue.yorku.ca/certificates/certificate-in-full-stack-web-development/).
+To deploy this project, build it by setting the REACT_APP_API environment variable to the value provided when deploying the backend for the app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is a frontend for https://github.com/maurom88/jsForm
-
-To start: npm start
+Windows:
+```
+set "REACT_APP_API=\<API URL>" && npm run build
+```
+MAC/Linux:
+```
+REACT_APP_API=\<API URL> npm run build
+```
