@@ -5,10 +5,8 @@ import fetchFunc from '../items/fetchFunc'
 function Resume() {
     const [jobs, setJobs] = useState([])
 
-    const url = process.env.REACT_APP_API + "/resume"
-
     useEffect(() => {
-        fetch(url)
+        fetch(process.env.REACT_APP_API + "/resume")
         .then(response => fetchFunc.handleResponse(response))
         .then(data => setJobs(data))
         .catch(err => fetchFunc.handleError(err))

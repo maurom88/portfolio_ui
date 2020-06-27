@@ -14,17 +14,16 @@ function Users() {
         // Prevent default behaviour (page reload)
         event.preventDefault()
 
-        const url = process.env.REACT_APP_API + "/users/signup"
-
         // Use fetch to post the content of the form to the url above
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ firstName, lastName, email, password1 })
-        })
+        fetch(process.env.REACT_APP_API + "/users/signup",
+            {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ firstName, lastName, email, password1 })
+            })
             .then(response => response.json())
             .then(response => response)
             //.then(history.push('/users/list')) // redirect to users list after registration

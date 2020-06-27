@@ -15,17 +15,16 @@ function ContactForm() {
         // For debugging purposes
         //console.log(name, email)
 
-        const url = process.env.REACT_APP_API + "/contact"
-
         // Use fetch to post the content of the form to the url above
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ name, email, phone, subject, message })
-        })
+        fetch(process.env.REACT_APP_API + "/contact",
+            {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, phone, subject, message })
+            })
             .then(response => response.json())
             .then(response => console.log(response))
 
